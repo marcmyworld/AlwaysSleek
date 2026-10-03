@@ -1,10 +1,10 @@
 id=tricky_store
-name=AlwaysStrong
+name=AlwaysSleek
 version=v1.0.4
 versionCode=104
-author=Evokerr, JingMatrix, Enginex0, osm0sis, KOWX712
-description=Strong Play Integrity in one drop-in module. TEE-Simulator-RS + PlayIntegrityFork, auto-refreshed. Tap Action.
-updateJson=https://raw.githubusercontent.com/evoker0/AlwaysStrong/main/update.json
+author=marcmyworld, Evokerr, JingMatrix, Enginex0, osm0sis, KOWX712
+description=Strong Play Integrity in one sleek drop-in module. TEE-Simulator-RS + PlayIntegrityFork, auto-refreshed. Tap Action.
+updateJson=https://raw.githubusercontent.com/marcmyworld/AlwaysSleek/main/update.json
 support=https://t.me/keyboxstrong
 donate=https://coindrop.to/evokerrr
 banner=banner.png

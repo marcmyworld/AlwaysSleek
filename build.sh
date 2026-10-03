@@ -898,7 +898,7 @@ done
   # AlwaysStrong-v1.0.4-411-06f040e-nightly.zip, the way upstream names theirs
   # (Tricky-Store-v1.4.1-245-72b2e84-release.zip).
   VERSION=${VERSION/ (/-}; VERSION=${VERSION%)}
-  OUT_ZIP="$OUT/AlwaysStrong-${VERSION}${ZIP_SUFFIX}${ATTEST_SUFFIX}.zip"
+  OUT_ZIP="$OUT/AlwaysSleek-${VERSION}${ZIP_SUFFIX}${ATTEST_SUFFIX}.zip"
   rm -f "$OUT_ZIP"
 
   bold "==> Packaging $OUT_ZIP"

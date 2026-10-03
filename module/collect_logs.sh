@@ -32,9 +32,23 @@ KEY_HOST="${KEYBOX_BASE_URL:-http://evoker.qzz.io}"
 # unavailable (FBE still locked, work profile, unmounted) — fall back to the
 # config dir rather than reporting a path that does not exist.
 STAMP=$(date +%Y%m%d-%H%M%S 2>/dev/null)
-NAME="AlwaysStrong-log${STAMP:+-$STAMP}.txt"
-OUT="/sdcard/$NAME"
-( : > "$OUT" ) 2>/dev/null || OUT="$CFG/$NAME"
+NAME="AlwaysSleek-log${STAMP:+-$STAMP}.txt"
+DL_DIR=""
+for _d in "/sdcard/Download/AlwaysSleek" "/storage/emulated/0/Download/AlwaysSleek" "/sdcard/Downloads/AlwaysSleek" "/storage/emulated/0/Downloads/AlwaysSleek"; do
+    mkdir -p "$_d" 2>/dev/null
+    if ( : > "$_d/.test" ) 2>/dev/null; then
+        rm -f "$_d/.test" 2>/dev/null
+        DL_DIR="$_d"
+        break
+    fi
+done
+
+if [ -n "$DL_DIR" ]; then
+    OUT="$DL_DIR/$NAME"
+else
+    OUT="/sdcard/$NAME"
+    ( : > "$OUT" ) 2>/dev/null || OUT="$CFG/$NAME"
+fi
 
 # busybox for the tools toybox may lack (sha256sum on old devices, etc.)
 BB=""

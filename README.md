@@ -154,11 +154,13 @@ rebuild locally with `scripts/build-asfetch.sh` and `scripts/build-watcher.sh`.
 ## Credits
 
 <div align="center">
-<img src="screenshots/built-on.png" alt="AlwaysStrong stands on the shoulders of TEESimulator-RS and PlayIntegrityFork" width="600">
+<img src="screenshots/built-on.png" alt="AlwaysSleek stands on the shoulders of TEESimulator-RS and PlayIntegrityFork" width="600">
 </div>
 
-AlwaysStrong is combine of TEE-Simulator-RS + Play Integrity Fork
+AlwaysSleek combines TEE-Simulator-RS + Play Integrity Fork / Fix with a sleek, Pixel Material You WebUI.
 
+- [marcmyworld](https://github.com/marcmyworld) — Fork & Material Design (WebUI redesign)
+- [Evokerr](https://github.com/evoker0) — Maintainer of AlwaysStrong, original packaging, auto-refresh system, and ecosystem
 - [JingMatrix](https://github.com/JingMatrix/TEESimulator) — original TEESimulator and keystore2 interception
 - [Enginex0](https://github.com/Enginex0/TEESimulator-RS) — TEESimulator-RS (Rust port, native certgen, AOSP-spec attestation)
 - [5ec1cff](https://github.com/5ec1cff/TrickyStore) — TrickyStore, which pioneered keystore interception and the config-dir layout reused here
